@@ -1,1 +1,14 @@
-/* Escribe acá tus estilos*/
+body{
+	
+	font-family: 'BioRhyme', serif;
+	background-image:url(../img/fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+
+}
+header>h1{
+	font-family: 'Inknut Antiqua', serif;
+	color:#fff;
+	text-align: center;
+}
