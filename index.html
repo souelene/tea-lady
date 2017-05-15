@@ -13,28 +13,44 @@
 	<section id="formulario">
 		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
 		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
-		<form action="">
-			<label for="Nombre Dueño"> Nombre:</label>
-			<input type="text">
-			<label for="Nombre mascota"> Apellido:</label>
-			<input type="text">
-			<label for="Email"> Correo Electrónico:</label> 
-			<input type="email">
-			<label for="Dirección">Dirección: </label>
-			<input type="text">
-			<label for="Teléfono">Teléfono:</label>
-			<input type="text">
-			<label for="">Selecciona un pack:</label>
-			<select name="" id="">
-				<option value="">Escoje tu opción</option>
-				<option value="">Pack de té clásico (Té negro)</option>
-				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
-				<option value="">Pack variedades (Té verde, rojo y blanco)</option>
-			</select>
-			<label for=""></label>
-			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos
-			<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
-		</form>
+ 	<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input  id="first_name" type="text" class="validate">
+          <label for="first_name">Nombre:</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name"> Apellido:</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Teléfono</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Correo Electrónico:</label>
+        </div>
+      </div>
+       <div class="row"> 
+        <div class="input-field col s12"> 
+          <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+          <label for="filled-in-box"> Recibe nuestro newsletter mensual con actividades y sorteos</label>
+       </div>
+      </div>
+
+
+        </form>
+  	</div>	
+
+
+
+
 	</section>
 	<section id="clientes">
 		<!-- Acá van los datos de ingresados por los clientes -->
@@ -43,7 +59,6 @@
 		<!-- Acá puedes crear lo que quieras-->
 	</section>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-
 	<script src="js/main.js"></script>
 </body>
 </html>
